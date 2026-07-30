@@ -31,7 +31,7 @@
 
 ```text
 $skill-installer 安装这个 Skill：
-https://github.com/OWNER/tangrou-script
+https://github.com/Trnb331/tangrou-script
 ```
 
 也可以把仓库复制到：
@@ -59,7 +59,7 @@ https://github.com/OWNER/tangrou-script
 ### Gemini CLI
 
 ```bash
-gemini skills install https://github.com/OWNER/tangrou-script
+gemini skills install https://github.com/Trnb331/tangrou-script
 ```
 
 也可以复制到：
@@ -79,7 +79,7 @@ gemini skills install https://github.com/OWNER/tangrou-script
 也可以直接告诉 Qwen Code：
 
 ```text
-请从 https://github.com/OWNER/tangrou-script 安装 tangrou-script Skill。
+请从 https://github.com/Trnb331/tangrou-script 安装 tangrou-script Skill。
 ```
 
 ### 其他 AI
