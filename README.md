@@ -6,11 +6,12 @@
 
 本仓库以开放的 `SKILL.md` 目录格式发布。支持 Agent Skills 的 AI 可以安装整个仓库；不支持 Skills 的网页 AI 可以读取或粘贴 `UNIVERSAL_PROMPT.md`。
 
-[下载可上传安装包：tangrou-script.zip](https://github.com/Trnb331/tangrou-script/releases/download/v1.2.0/tangrou-script.zip)
+[下载可上传安装包：tangrou-script.zip](https://github.com/Trnb331/tangrou-script/releases/download/v1.3.0/tangrou-script.zip)
 
 ## 能做什么
 
 - 从零访谈并建立账号底稿
+- 每轮只推进一个当前任务，并根据真实反馈选择下一步
 - 复用当前对话中已经确认的信息
 - 生成选题矩阵
 - 按任务调用内容设计、对标分析和情绪洞察知识
@@ -114,6 +115,7 @@ SKILL.md                         核心工作流
 references/interview-map.md     分轮问诊地图
 references/script-framework.md  口播结构与质量标准
 references/historical-workflow.md  工作流设计依据
+references/single-step-routing.md  单步推进与任务切换规则
 references/content-design.md    选题、平台表达与转化设计
 references/benchmark-analysis.md  对标账号筛选与分析
 references/insight-angles.md    情感、焦虑、人性与反认知角度
