@@ -1,26 +1,25 @@
 # tangrou-script
 
-一个先通过分轮问答了解账号、观众、业务和表达风格，再生成可直接拍摄的中文短视频口播逐字稿的 Agent Skill。
+一个先通过分轮问答了解账号、观众、业务和表达风格，再诊断口播推荐形式、核心观点、开头方向、内容结构和第一步的 Agent Skill。**只做诊断，不代写完整文案。**
 
 **支持：豆包、WorkBuddy、Claude Code、Codex，以及其他支持 Skills 的 Agent。**
 
 本仓库以开放的 `SKILL.md` 目录格式发布。支持 Agent Skills 的 AI 可以安装整个仓库；不支持 Skills 的网页 AI 可以读取或粘贴 `UNIVERSAL_PROMPT.md`。
 
-[下载可上传安装包：tangrou-script.zip](https://github.com/Trnb331/tangrou-script/releases/download/v1.5.0/tangrou-script.zip)
+[下载可上传安装包：tangrou-script.zip](https://github.com/Trnb331/tangrou-script/releases/download/v1.6.0/tangrou-script.zip)
 
 ## 能做什么
 
 - 从零访谈并建立账号底稿
 - 每轮只推进一个当前任务，并根据真实反馈选择下一步
 - 复用当前对话中已经确认的信息
-- 生成选题矩阵
+- 诊断选题与已有初稿
 - 按任务调用内容设计、对标分析和情绪洞察知识
 - 内置 8 个非商业分享的原始知识包，共 1808 个知识原子
-- 支持继续了解、结果收益、后果风险和明确行动四类 CTA
 - 内置平台合规检查，自动规避测算、运势、占卜、算命、改运及变相引流
-- 按 60 秒、2 分钟或 2 分 30 秒结构写完整逐字稿
-- 输出带时间段版本和无标注提词器版本
-- 根据“太软、太空、AI 味、转化生硬”等反馈重写
+- 判断 60 秒、2 分钟或 2 分 30 秒的合适结构
+- 固定输出推荐形式、核心观点、开头方向、内容结构和第一步
+- 明确禁止生成完整逐字稿、提词器稿或重写后的全文
 
 ## 安装
 
@@ -94,7 +93,7 @@ gemini skills install https://github.com/Trnb331/tangrou-script
 如果 AI 没有 Skill 安装功能：
 
 1. 打开或上传 `UNIVERSAL_PROMPT.md`。
-2. 告诉 AI：“严格按照这份提示词执行，先问我，再写口播。”
+2. 告诉 AI：“严格按照这份提示词执行，先问我，再诊断口播方向，不要代写完整文案。”
 
 ## 调用
 
@@ -107,7 +106,7 @@ gemini skills install https://github.com/Trnb331/tangrou-script
 自然语言调用：
 
 ```text
-使用 tangrou-script，先通过问答了解我的账号和业务，再为我写口播文案。
+使用 tangrou-script，先通过问答了解我的账号和业务，再诊断这条口播应该怎么做，不要代写完整文案。
 ```
 
 ## 文件说明
@@ -115,7 +114,7 @@ gemini skills install https://github.com/Trnb331/tangrou-script
 ```text
 SKILL.md                         核心工作流
 references/interview-map.md     分轮问诊地图
-references/script-framework.md  口播结构与质量标准
+references/script-framework.md  口播结构诊断标准
 references/historical-workflow.md  工作流设计依据
 references/single-step-routing.md  单步推进与任务切换规则
 references/content-design.md    选题、平台表达与转化设计

@@ -1,4 +1,4 @@
 interface:
-  display_name: "汤柔口播问诊"
-  short_description: "通过分轮问答完成账号定位、选题策划与口播逐字稿创作"
-  default_prompt: "使用 $tangrou-script 先通过问答了解我的账号和业务，再为我写口播文案。"
+  display_name: "汤柔口播诊断"
+  short_description: "通过分轮问答诊断口播形式、观点、开头、结构和第一步"
+  default_prompt: "使用 $tangrou-script 先了解我的账号和业务，再诊断这条口播应该怎么做，不要代写完整文案。"
