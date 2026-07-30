@@ -2,6 +2,8 @@
 
 一个先通过分轮问答了解账号、观众、业务和表达风格，再生成可直接拍摄的中文短视频口播逐字稿的 Agent Skill。
 
+**支持：豆包、WorkBuddy、Claude Code、Codex，以及其他支持 Skills 的 Agent。**
+
 本仓库以开放的 `SKILL.md` 目录格式发布。支持 Agent Skills 的 AI 可以安装整个仓库；不支持 Skills 的网页 AI 可以读取或粘贴 `UNIVERSAL_PROMPT.md`。
 
 ## 能做什么
@@ -14,6 +16,14 @@
 - 根据“太软、太空、AI 味、转化生硬”等反馈重写
 
 ## 安装
+
+### 豆包与 WorkBuddy
+
+把本仓库地址交给 Agent，并发送：
+
+```text
+请安装并使用这个 Skill。若当前产品不能直接安装 GitHub Skill，请读取 SKILL.md 和 references 目录，严格按照其中的流程执行。
+```
 
 ### Codex
 
