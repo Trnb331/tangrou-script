@@ -6,7 +6,7 @@
 
 本仓库以开放的 `SKILL.md` 目录格式发布。支持 Agent Skills 的 AI 可以安装整个仓库；不支持 Skills 的网页 AI 可以读取或粘贴 `UNIVERSAL_PROMPT.md`。
 
-[下载可上传安装包：tangrou-script.zip](https://github.com/Trnb331/tangrou-script/releases/download/v1.4.0/tangrou-script.zip)
+[下载可上传安装包：tangrou-script.zip](https://github.com/Trnb331/tangrou-script/releases/download/v1.5.0/tangrou-script.zip)
 
 ## 能做什么
 
@@ -17,6 +17,7 @@
 - 按任务调用内容设计、对标分析和情绪洞察知识
 - 内置 8 个非商业分享的原始知识包，共 1808 个知识原子
 - 支持继续了解、结果收益、后果风险和明确行动四类 CTA
+- 内置平台合规检查，自动规避测算、运势、占卜、算命、改运及变相引流
 - 按 60 秒、2 分钟或 2 分 30 秒结构写完整逐字稿
 - 输出带时间段版本和无标注提词器版本
 - 根据“太软、太空、AI 味、转化生硬”等反馈重写
@@ -118,6 +119,7 @@ references/script-framework.md  口播结构与质量标准
 references/historical-workflow.md  工作流设计依据
 references/single-step-routing.md  单步推进与任务切换规则
 references/content-design.md    选题、平台表达与转化设计
+references/platform-compliance.md 平台封建迷信禁区、合规改写与规则来源
 references/benchmark-analysis.md  对标账号筛选与分析
 references/insight-angles.md    情感、焦虑、人性与反认知角度
 references/knowledge-pack/     8 个按需检索的第三方原始知识包
