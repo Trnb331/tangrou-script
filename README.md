@@ -13,6 +13,7 @@
 - 从零访谈并建立账号底稿
 - 复用当前对话中已经确认的信息
 - 生成选题矩阵
+- 按任务调用内容设计、对标分析和情绪洞察知识
 - 按 60 秒、2 分钟或 2 分 30 秒结构写完整逐字稿
 - 输出带时间段版本和无标注提词器版本
 - 根据“太软、太空、AI 味、转化生硬”等反馈重写
@@ -112,6 +113,9 @@ SKILL.md                         核心工作流
 references/interview-map.md     分轮问诊地图
 references/script-framework.md  口播结构与质量标准
 references/historical-workflow.md  工作流设计依据
+references/content-design.md    选题、平台表达与转化设计
+references/benchmark-analysis.md  对标账号筛选与分析
+references/insight-angles.md    情感、焦虑、人性与反认知角度
 agents/openai.yaml              OpenAI 产品界面元数据
 UNIVERSAL_PROMPT.md             不支持 Skills 的 AI 使用
 ```

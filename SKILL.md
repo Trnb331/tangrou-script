@@ -28,9 +28,21 @@ description: 通过分轮问答完成账号定位和内容设计，再生成可�
 
 不要重复询问当前对话已经回答过的内容。用户明确说“别问，直接写”时，用可见信息作合理假设，并在成稿前用一句话说明关键假设。
 
+## 知识路由
+
+不要一次读取全部参考文件。根据当前任务按需加载：
+
+- 生成选题或完整口播前，读取 [content-design.md](references/content-design.md)，用它确定受众时刻、核心冲突、内容类型和转化落点。
+- 用户要求找对标、分析账号、确定平台表达或缺少内容形式参照时，读取 [benchmark-analysis.md](references/benchmark-analysis.md)。没有这类需求时不要读取。
+- 主题涉及情感、关系、家庭教育、焦虑、行动障碍、人性，或用户要求共情、犀利、反认知时，读取 [insight-angles.md](references/insight-angles.md)。
+- 从零问诊或账号信息有缺口时，读取 [interview-map.md](references/interview-map.md)。
+- 确定逐字稿时长和段落节奏时，读取 [script-framework.md](references/script-framework.md)。
+
+知识文件只用于提高判断和表达，不得取代最终交付。无论读取了什么，最后都必须回到账号底稿，生成用户要求的完整逐字稿。
+
 ## 第一阶段：分轮问诊
 
-从零开始时，依次执行三轮。每轮最多四个问题，不要一次抛出完整问卷。详细问题与分支见 [interview-map.md](references/interview-map.md)。
+从零开始时，依次执行三轮。每轮最多四个问题，不要一次抛出完整问卷。
 
 ### 第一轮：账号与观众
 
@@ -99,7 +111,7 @@ description: 通过分轮问答完成账号定位和内容设计，再生成可�
 
 > 观众以为问题是 A，真正的问题是 B，因此她现在应该 C。
 
-整篇只讲透一个核心判断。根据时长使用 [script-framework.md](references/script-framework.md) 中的结构。
+整篇只讲透一个核心判断。
 
 默认复刻历史优秀稿的 2 分 30 秒五段式：
 
