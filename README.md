@@ -1,6 +1,6 @@
 # tangrou-script
 
-一个先通过分轮问答了解账号、观众、业务和表达风格，再诊断口播推荐形式、核心观点、开头方向、内容结构和第一步的 Agent Skill。**只做诊断，不代写完整文案。**
+一个先通过分轮问答了解账号、观众、业务和表达风格，再诊断口播方向并生成完整口播文案的 Agent Skill。支持开头优化、逻辑延续检查、标记式改稿和标题生成。
 
 **支持：豆包、WorkBuddy、Claude Code、Codex，以及其他支持 Skills 的 Agent。**
 
@@ -19,7 +19,11 @@
 - 内置平台合规检查，自动规避测算、运势、占卜、算命、改运及变相引流
 - 判断 60 秒、2 分钟或 2 分 30 秒的合适结构
 - 固定输出推荐形式、核心观点、开头方向、内容结构和第一步
-- 明确禁止生成完整逐字稿、提词器稿或重写后的全文
+- 诊断确认后生成完整口播逐字稿
+- 开头优化：三种方法各生成 3–5 条，选出 Top 3
+- 逻辑延续检查：逻辑衔接、信息密度、口播流畅度三维扫描
+- 标记式改稿：保留原文，用删除线和 🆕 标记改动
+- 标题生成：按平台特性生成 5–8 个方案
 
 ## 安装
 
@@ -93,7 +97,7 @@ gemini skills install https://github.com/Trnb331/tangrou-script
 如果 AI 没有 Skill 安装功能：
 
 1. 打开或上传 `UNIVERSAL_PROMPT.md`。
-2. 告诉 AI：“严格按照这份提示词执行，先问我，再诊断口播方向，不要代写完整文案。”
+2. 告诉 AI："严格按照这份提示词执行，先问我，再诊断口播方向，诊断确认后生成完整文案。"
 
 ## 调用
 
@@ -106,24 +110,27 @@ gemini skills install https://github.com/Trnb331/tangrou-script
 自然语言调用：
 
 ```text
-使用 tangrou-script，先通过问答了解我的账号和业务，再诊断这条口播应该怎么做，不要代写完整文案。
+使用 tangrou-script，先通过问答了解我的账号和业务，再诊断这条口播应该怎么做，诊断确认后帮我写完整文案。
 ```
 
 ## 文件说明
 
 ```text
-SKILL.md                         核心工作流
-references/interview-map.md     分轮问诊地图
-references/script-framework.md  口播结构诊断标准
-references/historical-workflow.md  工作流设计依据
-references/single-step-routing.md  单步推进与任务切换规则
-references/content-design.md    选题、平台表达与转化设计
-references/platform-compliance.md 平台封建迷信禁区、合规改写与规则来源
-references/benchmark-analysis.md  对标账号筛选与分析
-references/insight-angles.md    情感、焦虑、人性与反认知角度
-references/knowledge-pack/     8 个按需检索的第三方原始知识包
-agents/openai.yaml              OpenAI 产品界面元数据
-UNIVERSAL_PROMPT.md             不支持 Skills 的 AI 使用
+SKILL.md                              核心工作流（诊断 + 创作）
+references/interview-map.md           分轮问诊地图
+references/script-framework.md        口播结构与时长标准
+references/script-writing.md          口播文案写作标准
+references/hook-optimization.md       开头优化标准
+references/script-flow-check.md       逻辑延续检查与标记式改稿
+references/historical-workflow.md     工作流设计依据
+references/single-step-routing.md     单步推进与任务切换规则
+references/content-design.md          选题、平台表达与转化设计
+references/platform-compliance.md     平台封建迷信禁区、合规改写与规则来源
+references/benchmark-analysis.md      对标账号筛选与分析
+references/insight-angles.md          情感、焦虑、人性与反认知角度
+references/knowledge-pack/            8 个按需检索的第三方原始知识包
+agents/openai.yaml                    OpenAI 产品界面元数据
+UNIVERSAL_PROMPT.md                   不支持 Skills 的 AI 使用
 ```
 
 ## 许可
