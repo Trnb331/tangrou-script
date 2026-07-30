@@ -6,7 +6,7 @@
 
 本仓库以开放的 `SKILL.md` 目录格式发布。支持 Agent Skills 的 AI 可以安装整个仓库；不支持 Skills 的网页 AI 可以读取或粘贴 `UNIVERSAL_PROMPT.md`。
 
-[下载可上传安装包：tangrou-script.zip](https://github.com/Trnb331/tangrou-script/releases/download/v1.0.0/tangrou-script.zip)
+[下载可上传安装包：tangrou-script.zip](https://github.com/Trnb331/tangrou-script/releases/download/v1.1.0/tangrou-script.zip)
 
 ## 能做什么
 
