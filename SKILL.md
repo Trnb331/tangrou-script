@@ -32,13 +32,16 @@ description: 通过分轮问答完成账号定位和内容设计，再生成可�
 
 不要一次读取全部参考文件。根据当前任务按需加载：
 
-- 生成选题或完整口播前，读取 [content-design.md](references/content-design.md)，用它确定受众时刻、核心冲突、内容类型和转化落点。
-- 用户要求找对标、分析账号、确定平台表达或缺少内容形式参照时，读取 [benchmark-analysis.md](references/benchmark-analysis.md)。没有这类需求时不要读取。
-- 主题涉及情感、关系、家庭教育、焦虑、行动障碍、人性，或用户要求共情、犀利、反认知时，读取 [insight-angles.md](references/insight-angles.md)。
+- 生成选题或完整口播前，读取 [content-design.md](references/content-design.md)。需要更多观点、反面案例或平台经验时，再从 `references/knowledge-pack/content_*.md` 中检索与主题最相关的 3–8 个知识原子。
+- 用户要求找对标、分析账号、确定平台表达或缺少内容形式参照时，读取 [benchmark-analysis.md](references/benchmark-analysis.md)，再从 `references/knowledge-pack/benchmark_*.md` 中检索相关方法和案例。没有这类需求时不要读取。
+- 主题涉及行动障碍、拖延、完美主义或回避时，先读取 [insight-angles.md](references/insight-angles.md)，再从 `references/knowledge-pack/unblock_*.md` 中检索 3–6 个相关知识原子。
+- 主题涉及情感、关系、家庭教育、焦虑、人性，或用户要求共情、犀利、反认知时，读取 [insight-angles.md](references/insight-angles.md)。需要拆解模糊词、重写错误问题或寻找反认知案例时，再从 `references/knowledge-pack/deconstruct_*.md` 中检索 3–6 个相关知识原子。
 - 从零问诊或账号信息有缺口时，读取 [interview-map.md](references/interview-map.md)。
 - 确定逐字稿时长和段落节奏时，读取 [script-framework.md](references/script-framework.md)。
 
-知识文件只用于提高判断和表达，不得取代最终交付。无论读取了什么，最后都必须回到账号底稿，生成用户要求的完整逐字稿。
+原始知识包很大，不要全文读取。优先使用文件搜索或关键词检索；宿主无法检索大文件时，只使用三个精简模块，不要强行加载全部知识包。文件说明与许可见 [knowledge-pack/INDEX.md](references/knowledge-pack/INDEX.md)。
+
+知识文件只用于提高判断和表达，不得取代最终交付。原始知识原子包含作者个人观点和历史平台经验，必须结合用户事实与当前平台情况判断，不得当作普遍真理，不得把作者经历写成用户经历。无论读取了什么，最后都必须回到账号底稿，生成用户要求的完整逐字稿。
 
 ## 第一阶段：分轮问诊
 

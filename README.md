@@ -6,7 +6,7 @@
 
 本仓库以开放的 `SKILL.md` 目录格式发布。支持 Agent Skills 的 AI 可以安装整个仓库；不支持 Skills 的网页 AI 可以读取或粘贴 `UNIVERSAL_PROMPT.md`。
 
-[下载可上传安装包：tangrou-script.zip](https://github.com/Trnb331/tangrou-script/releases/download/v1.1.0/tangrou-script.zip)
+[下载可上传安装包：tangrou-script.zip](https://github.com/Trnb331/tangrou-script/releases/download/v1.2.0/tangrou-script.zip)
 
 ## 能做什么
 
@@ -14,6 +14,7 @@
 - 复用当前对话中已经确认的信息
 - 生成选题矩阵
 - 按任务调用内容设计、对标分析和情绪洞察知识
+- 内置 8 个非商业分享的原始知识包，共 1808 个知识原子
 - 按 60 秒、2 分钟或 2 分 30 秒结构写完整逐字稿
 - 输出带时间段版本和无标注提词器版本
 - 根据“太软、太空、AI 味、转化生硬”等反馈重写
@@ -116,10 +117,13 @@ references/historical-workflow.md  工作流设计依据
 references/content-design.md    选题、平台表达与转化设计
 references/benchmark-analysis.md  对标账号筛选与分析
 references/insight-angles.md    情感、焦虑、人性与反认知角度
+references/knowledge-pack/     8 个按需检索的第三方原始知识包
 agents/openai.yaml              OpenAI 产品界面元数据
 UNIVERSAL_PROMPT.md             不支持 Skills 的 AI 使用
 ```
 
 ## 许可
 
-MIT License。允许使用、修改和分享，保留许可证即可。
+本仓库原创的 Skill 工作流使用 MIT License。
+
+`references/knowledge-pack/` 中的第三方原始知识包来自 [dontbesilent2025/dbskill](https://github.com/dontbesilent2025/dbskill)，继续使用 CC BY-NC 4.0 许可：必须保留署名，只允许非商业使用、修改和分享。详细说明见该目录的 `SOURCE.md` 与 `LICENSE`。
